@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+}
+.graph {
+  padding: .5rem;
+}
+
+.Information {
+  background: #343434 !important;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  font-weight: 900;
+  color: white;
+}
+
+@media screen and (max-width: 960px ) {
+  .Information {
+    font-size: 1.7rem;
+  }
+}
+
+.Hello {
+  height: 100%;
+  width: 100%;
+}
