@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# GETTING STARTED WITH CHEMOTRIX DASHBOARD
+## This application is created with reactjs and bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ## Available Scripts
 
