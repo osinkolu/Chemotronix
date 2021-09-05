@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title> CHEMOTRON X. </title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styling.css') }}">
+</head>
+  <body>
+      <div class="top-container">
+        <div class="contents">
+        PREDICT THE VALUE OF CARBON EMITTED AT ANY LOCATION AND ANY TIME.
+      </div>
+         </div>
+         <div class="story">
+           The machine learning algorithm predicts the value of carbon at any time in the past, present or future and in any location.
+         </div>
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('check_status')}}"method="post">
+    <div class="inputs">
+
+    <div class="input-row">
+    <img height="40"  src= "{{ url_for('static', filename='settlement.png') }}">
+    <select name="sector"class="each-input">
+      <option value=1> Domestic Aviation </option>
+      <option value=2> International Aviation </option>
+      <option value=3> Residential </option>
+      <option value=4> Ground Transport </option>
+      <option value=5> Industry </option>
+      <option value=6> Power </option>
+
+    </select>
+    </div>
+    <div class="text">Select the Sector</div>
+
+
+
+    <div class="input-row">
+    <img height="40"  src= "{{ url_for('static', filename='year.png') }}">
+    <input class="each-input" type="text" name="year" placeholder="year" required="required" />
+    </div>
+    <div class="text">year readings were taken </div>
+
+    <div class="input-row">
+    <img height="40"  src= "{{ url_for('static', filename='year.png') }}">
+    <select name="month"class="each-input">
+      <option value=1> January </option>
+      <option value=2> February </option>
+      <option value=3> March </option>
+      <option value=4> April </option>
+      <option value=5> May </option>
+      <option value=6> June </option>
+      <option value=7> July </option>
+      <option value=8> August </option>
+      <option value=9> September</option>
+      <option value=10> October </option>
+      <option value=11> November </option>
+      <option value=12> December </option>
+
+    </select>
+    </div>
+    <div class="text">Select Month of the Year</div>
+
+    <div class="input-row">
+    <img height="40"  src= "{{ url_for('static', filename='year.png') }}">
+		<input class="each-input" type="text" name="Day" placeholder="Day between 1 to 30" required="required" />
+    </div>
+    <div class="text">Day of the month (just the number) </div>
+
+    <div class="input-row">
+    <img height="40"  src= "{{ url_for('static', filename='map.png') }}">
+    <select name="Building_Type"class="each-input">
+      <option value=1> China </option>
+      <option value=2> Europe & UK </option>
+      <option value=3> France </option>
+      <option value=4> Germany </option>
+      <option value=5> India </option>
+      <option value=6> Italy </option>
+      <option value=7> Japan </option>
+      <option value=8> Row </option>
+      <option value=9> Russia </option>
+      <option value=10> Spain </option>
+      <option value=11> UK </option>
+      <option value=12> US </option>
+      <option value=13> World </option>
+    </select>
+    </div>
+    <div class="text">Select Country </div>
+
+        <button class="each-input" type="submit" >check_status</button>
+      </div>
+    </form>
+   <br>
+   <br>
+   {{ prediction_text }}
+   <p> </p>
+   <p> </p>
+   <div class="image-row">
+   <img id="image" height="150" src= "{{ url_for('static', filename='data_science.png') }}">
+   <img id="image" height="150" src= "{{ url_for('static', filename='chevron.png') }}">
+ </div>
+
+<div class="story">
+   This is the deployed analytical model for the AI for Energy hackathon by team chemotronix.
+</div>
+<!-- check out my mail-->
+<!--bottom area-->
+  <div class="bottom-container">
+    <div class="flex-bottom-container">
+      <div class="copyright-details">
+      copyright &copy 2020 <a href="hhttps://github.com/Adedayo19/Chemotronix" target="_blank">Team Chemotronix.</a> Designed and developed by Team Chemotronix.
+      </div>
+      <a href="mailto: femiosinkolu@gmail.com" target= _blank><img id="gmail-icon" src="{{ url_for('static', filename='gmail.png') }}"></a>
+      <a href="https://www.linkedin.com/in/victor-olufemi-a44924192/" target= _blank><img id="linkedin-icon" src="{{ url_for('static', filename='linkedin.png') }}"></a>
+      <a href="https://twitter.com/profvictor001" target= _blank><img id="twitter-icon" src="{{ url_for('static', filename='twitter.png') }}"></a>
+      <a href="https://www.facebook.com/profile.php?id=100009859840576" target= _blank><img id="facebook-icon" src="{{ url_for('static', filename='facebook.png') }}"></a>
+    </div>
+  </div>
+ </body>
+</html>

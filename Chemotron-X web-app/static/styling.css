@@ -1,0 +1,105 @@
+body{
+	background-color: grey;
+}
+.top-container{
+	display: flex;
+	width:100%;
+	background-color: black;
+	color: silver;
+	text-align: center;
+	height: 25px;
+	justify-content: center;
+}
+.contents{
+	font-size: 0.5cm;
+	margin-top: 2px;
+}
+.story{
+	font-size: 0.4cm;
+	margin: 5px;
+}
+.inputs{
+	display:flex;
+	flex-direction: column;
+}
+.input-row{
+	display: flex;
+	flex-direction: row;
+}
+.each-input{
+	height: 40px;
+	width:100%;
+}
+.text{
+  margin-bottom: 20px;
+}
+.image-row{
+  display: flex;
+  align-items: center;
+  height:150px;
+  position: relative;
+}
+#image{
+  margin:2%;
+
+}
+.bottom-container{
+  width: 100%;
+}
+.flex-bottom-container{
+  width: 100%;
+  display:flex;
+  background-color:black;
+  height: 30px;
+  color: white;
+}
+#linkedin-icon{
+  height: 25px;
+  width: 30px;
+  margin-top: 2.5px;
+  margin-left: 20px;
+}
+#linkedin-icon:hover{
+  height: 30px;
+  width: 35px;
+  margin-top: 0px;
+ }
+#twitter-icon{
+  height: 25px;
+  width: 30px;
+  margin-top: 2.5px;
+  margin-left: 20px;
+}
+#twitter-icon:hover{
+  height: 30px;
+  width: 35px;
+  margin-top: 0px;
+ }
+#facebook-icon{
+  height: 25px;
+  width: 30px;
+  margin-top: 2.5px;
+  margin-left: 20px;
+}
+#facebook-icon:hover{
+  height: 30px;
+  width: 35px;
+  margin-top: 0px;
+ }
+#gmail-icon{
+  height: 25px;
+  width: 30px;
+  margin-top: 2.5px;
+  margin-left: 20px;
+}
+#gmail-icon:hover{
+  height: 30px;
+  width: 35px;
+  margin-top: 0px;
+ }
+.copyright-details{
+  margin-top: 10px;
+  width:80%;
+  text-align: left;
+  margin-left: 5px;
+}
